@@ -1,0 +1,38 @@
+.navBar{
+    min-height: 7vh;
+    background-color: #0F3460;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.busLogo{
+    height: 50px;
+    border-radius: 15px;
+    position: relative;
+    left: 1%;
+
+}
+
+.companyName{
+    position: relative;
+    left: 5%;
+    color: #F05454;
+}
+
+.btnContainer{
+
+    display: flex;
+    position: relative;
+    right: 10px;
+;
+}
+
+.routeBtn{
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 7px 10px;
+    padding: 3px 15px;
+    background-color: #E94560;
+
+}

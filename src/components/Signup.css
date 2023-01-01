@@ -1,0 +1,86 @@
+.signupContainer{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.background{
+
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: rgb(34, 31, 31);
+    opacity: 0.5;
+}
+.cross{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+
+.loginForm2{
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-color: #5C2A9D;
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    position: relative;
+    z-index: 6;
+}
+
+.loginFormHead{
+    color: #C70039;
+    margin: 40px;
+}
+
+.inputCont{
+
+    width: 65%;
+    margin: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.inputCont>input{
+    width: 70%;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #D8B9C3;
+    color: black;
+    padding-left: 10px;
+}
+
+
+
+.credBtns{
+    background-color: aqua;
+    color: black;
+    border: 1px solid transparent;
+    margin: 20px;
+    padding: 10px 35px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+}
+

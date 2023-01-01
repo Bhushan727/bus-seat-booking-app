@@ -1,0 +1,71 @@
+
+.cellContainer{
+    display: grid;
+    grid-template-columns:50px 50px 50px 50px;
+    grid-row-gap: 5px;
+    grid-column-gap: 20px;
+    width: fit-content;
+    position: relative;
+    left: 35%;
+}
+
+.cellHeads{
+    height: 20vh;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.seats{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 5px;
+    overflow: hidden;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.demo1{
+    background-color: wheat;
+}
+.demo2{
+    background-color: blue;
+}
+.demo3{
+    background-color: crimson;
+}
+
+.reserved{
+    width: 100%;
+    height: 100%;
+    background-color: crimson;
+    padding: 10px;
+}
+
+.selected{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    padding: 10px;
+}
+
+.available{
+    width: 100%;
+    height: 100%;
+    background-color: wheat;
+    padding: 10px;
+}
+
+.confirmBtn{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: aquamarine;
+    padding: 10px 20px;
+    color: black;
+}
+.confirmBtn:hover{
+    cursor: pointer;
+    scale: 1.2;
+    transition: 0.2s;
+}

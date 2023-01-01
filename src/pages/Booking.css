@@ -1,0 +1,113 @@
+
+.bookPage{
+    display: flex;
+    justify-content: center ;
+}
+
+.leftCont{
+
+    height: 93vh;
+    width: 50%;
+    padding: 2em 0 2em 2em;
+}
+.rightCont{
+
+    height: 93vh;
+    width: 50%;
+}
+
+.resetBtn{
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    background-color: transparent;
+    border: 1px solid blue;
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-size: 15px;
+}
+.resetBtn:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: black;
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+}
+
+.bookingHeads{
+    color: cadetblue;
+    /* margin: 2em; */
+}
+
+.bookingLine{
+    color: cyan;
+    margin: 20px 0;
+}
+
+.bookingDisplay{
+    width: 50%;
+    height: 40vh;
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    
+}
+.bookingDisplay>img{
+    height: 75%;
+}
+.million{
+    color: black;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.happy{
+    color: black;
+}
+
+.userName{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    min-width: 50%;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.logOut{
+    position: absolute;
+    top: 7.5vh;
+    left: 50%;
+    background-color: transparent;
+    border: 0.8px solid blue;
+    border-radius: 15px;
+    padding: 10px 25px;
+    color: wheat;
+}
+.logOut:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: black;
+}
+.price{
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+}
+.notPrice{
+    color: crimson;
+    text-decoration:line-through;
+}
+.seatDetailCont{
+    width: 40%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+}
