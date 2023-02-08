@@ -10,7 +10,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
-
+    
     fetch("https://easy-gray-pig-fez.cyclic.app/login",{
             method : "POST",
             crossDomain : true,
@@ -42,8 +42,6 @@ const Login = () => {
         e.preventDefault();
         setEmail('')
         setPassword('')
-
-
   }
 
   return (

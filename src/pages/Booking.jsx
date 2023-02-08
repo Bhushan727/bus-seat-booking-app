@@ -52,7 +52,7 @@ const Booking = () => {
       return false;
     }else{
       return true;
-    }
+    } 
   }
 
   const handleSubmit = async () => {    
