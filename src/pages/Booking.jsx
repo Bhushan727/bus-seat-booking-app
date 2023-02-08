@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import Loader from '../components/Loader/Loader'
 import Seats from '../components/Seats'
 import './Booking.css'
 
 const Booking = () => {
   
+  const [loader,setLoader] = useState(false);
+
   const [seat] = useState([
     "A1","A2","A3","A4","A5","A6","A7","A8","A9","A10","A11","A12","A13","A14","A15","A16","A17","A18",
     "B1","B2","B3","B4","B5","B6","B7","C1","C2","C3","C4","C5","C6","C7"
@@ -23,11 +26,17 @@ const Booking = () => {
   const [name,setName] = useState('');
 
   useEffect(()=>{
+    setLoader(true)
     fetch('https://easy-gray-pig-fez.cyclic.app/seat')
     .then(res => res.json())
     .then((data)=>{
       console.log(data);  
-      setSeatSelected(data)
+      setSeatSelected(data);
+      setLoader(false);
+    })
+    .catch((err)=>{
+      console.log("error ",err);
+      setLoader(false);
     })
     setName(localStorage.getItem('name'))
     if(localStorage.getItem('email')===null){
@@ -56,6 +65,7 @@ const Booking = () => {
   }
 
   const handleSubmit = async () => {    
+
     const temp = seatSelected.concat(seatReserved)
     console.log(temp);
 
@@ -75,9 +85,13 @@ const Booking = () => {
     .then((data)=>{
       console.log(data,"data");
     })  
+    .catch((err)=>{
+      console.log("error ",err);
+    })
 
     setSeatSelected(seatSelected.concat(seatReserved));
     setSeatReserved([]);
+    console.log("booked")
 
     alert('Bookiing confirmed')
   }
@@ -105,12 +119,18 @@ const Booking = () => {
     .then((data)=>{
       console.log(data,"data");
     })
+    .catch(err=>{
+      console.log("error ",err)
+    })
     setSeatSelected([]);
 
   }
 
   return (
     <div className='bookPage'>
+      {
+        loader && <Loader />
+      }
         <div className="leftCont">
             <h1 className='bookingHeads'>We've partnered with the world's best bus companies</h1>
             <h3 className='bookingLine'>More than 3500 trusted travel partners across trains, busses, ferries and airport transfers</h3>
